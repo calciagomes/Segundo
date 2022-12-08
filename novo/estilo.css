@@ -1,0 +1,293 @@
+header {
+  height: 150px;
+  background: rgb(23, 203, 235);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho {
+  background: rgb(94, 238, 243);
+  height: 150px;
+  width: 70%;
+}
+h1 {
+  padding-left: 20px;
+  font-size: 2.6rem;
+}
+p {
+  padding-left: 50px;
+  font-size: 12pt;
+}
+nav {
+  width: 50%;
+  border-radius: 30px;
+  padding: 1px 2px;
+  background: rgb(51, 124, 135);
+  position: relative;
+  top: -26px;
+  left: 10px;
+}
+.primeira-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+li a::before {
+  content: "";
+  display: inline-block;
+  background: white;
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  left: 90px;
+}
+li a::after {
+  content: "";
+  display: inline-block;
+  background: white;
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  left: 170px;
+}
+main {
+  height: 900px;
+  background: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.branco {
+  height: 900px;
+  background: white;
+  width: 70%;
+}
+.primeira {
+  height: 200px;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+img {
+  height: 100px;
+  margin-top: 40px;
+}
+span {
+  font-size: 12px;
+  margin-top: 0%;
+  font-weight: normal;
+}
+.primeira::after {
+  content: "";
+  background: rgb(77, 186, 201);
+  width: 170%;
+  height: 2px;
+}
+.segunda {
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid #ccc;
+}
+
+.cadastro {
+  padding-top: 20px;
+  padding-left: 10px;
+  height: 290px;
+}
+#msm {
+  background: white;
+
+  width: 30%;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  top: -90px;
+  left: 15px;
+}
+input {
+  font-size: 1rem;
+  height: 30px;
+  margin-left: 20px;
+  width: 70%;
+  position: relative;
+  left: 90px;
+  top: -45px;
+}
+textarea {
+  position: relative;
+  left: 70px;
+  top: -45px;
+  width: 70%;
+  margin-left: 7px;
+  height: 40px;
+}
+label {
+  position: relative;
+  top: -50px;
+  margin-left: 50px;
+}
+#mensagem {
+  height: 55px;
+  margin: 0px;
+}
+button {
+  height: 30px;
+  width: 100px;
+
+  background: rgb(77, 186, 201);
+}
+
+footer {
+  padding: 5px 10px;
+  background: rgb(54, 54, 54);
+}
+.footerm a {
+  text-decoration: none;
+  color: white;
+  font-size: 16pt;
+  margin-left: 10px;
+  position: relative;
+  left: 200px;
+  padding: 20px 10px;
+}
+.footerm::before {
+  content: "";
+  display: inline-block;
+  background: white;
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  left: 302px;
+}
+.footerm::after {
+  content: "";
+  display: inline-block;
+  background: white;
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  left: 420px;
+}
+@media (max-width: 500px) {
+  nav {
+    display: inline-block;
+    border-radius: 2px;
+    width: 60%;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .primeira-ul {
+    max-width: 30%;
+  }
+  li a::before,
+  li a::after {
+    display: none;
+  }
+  .primeira {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main {
+    height: 1000px;
+    background: #ccc;
+  }
+  .branco {
+    height: 1000px;
+    background: white;
+    width: 70%;
+  }
+  header {
+    height: 100px;
+  }
+  .cabecalho {
+    width: 70%;
+    height: 100px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .segunda {
+    margin-top: 150px;
+    height: 300px;
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  input {
+    font-size: 1rem;
+    padding: 0px;
+    margin-left: 0px;
+    width: 0%;
+    position: relative;
+    left: 0px;
+    top: -45px;
+  }
+  textarea {
+    position: relative;
+    left: 50px;
+    top: -45px;
+    width: 30%;
+    margin-left: 0px;
+    height: 30px;
+  }
+  label {
+    display: none;
+  }
+
+  .primeira::after {
+    display: none;
+  }
+  button {
+    position: static;
+
+    height: 20px;
+    width: 50px;
+  }
+
+  footer {
+    background: rgb(54, 54, 54);
+  }
+  .footerm a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0px;
+    position: relative;
+    left: 10px;
+  }
+  .footerm::after,
+  .footerm::before {
+    display: none;
+  }
+}
+@media (max-width: 1500px) {
+  button {
+    position: static;
+  }
+  input {
+    font-size: 1rem;
+
+    margin-left: 0px;
+    width: 70%;
+    position: relative;
+    left: 30px;
+    top: -45px;
+  }
+  textarea {
+    position: relative;
+    left: 0px;
+    top: -45px;
+    width: 70%;
+    margin-left: 0px;
+    height: 30px;
+  }
+}
